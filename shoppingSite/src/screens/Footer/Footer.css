@@ -1,0 +1,116 @@
+.ecom-footer {
+  margin-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(20, 23, 28, 0.6);
+}
+
+.ecom-footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 16px;
+}
+
+.ecom-footer__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.ecom-footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ecom-footer__logo {
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.ecom-footer__tagline {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ecom-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px 16px;
+}
+
+.ecom-footer__link {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.ecom-footer__link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.ecom-footer__bottom {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ecom-footer__copyright {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ecom-footer__legal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 700px) {
+  .ecom-footer__top {
+    flex-direction: column;
+  }
+
+  .ecom-footer__links {
+    justify-content: flex-start;
+  }
+
+  .ecom-footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .ecom-footer {
+    border-top: 1px solid rgba(2, 6, 23, 0.08);
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  .ecom-footer__logo {
+    color: rgba(2, 6, 23, 0.92);
+  }
+
+  .ecom-footer__tagline,
+  .ecom-footer__copyright {
+    color: rgba(2, 6, 23, 0.6);
+  }
+
+  .ecom-footer__link {
+    color: rgba(2, 6, 23, 0.78);
+  }
+
+  .ecom-footer__link:hover {
+    color: rgba(2, 6, 23, 1);
+  }
+
+  .ecom-footer__bottom {
+    border-top: 1px solid rgba(2, 6, 23, 0.08);
+  }
+}

@@ -1,0 +1,67 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.filters{
+    display: flex;
+    gap:16px;
+    margin:20px 0;
+    flex-direction: row;
+}
+.context-section{
+     display: flex;
+     gap:12px;
+     align-items: center;
+}
+.context-section input{
+    height: 30px;
+    border-radius: 8px;
+    padding: 5px;
+}
+.products-table{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:16px;
+}
+/* styles to show product price, rating and discount with title */
+.product-box{
+    display: flex;
+    flex-direction: column;
+    border:2px solid blue;
+    gap:0;
+    max-height: 200px;
+    max-width: 400px;
+    position: relative;
+    padding: 20px;
+}
+.title{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+.para{
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+.action-box{
+    display: flex;
+    flex-direction: row;
+    gap:12px
+}
+.red-btn{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.primary-btn{
+    background-color: rgb(8, 176, 34);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

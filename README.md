@@ -1,0 +1,3 @@
+- npm create vite@latest app-name
+- npm run dev
+- react-router-dom, react-redux, @reduxjs/toolkit
