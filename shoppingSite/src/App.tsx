@@ -11,6 +11,10 @@ import { useAuth } from "./context/AuthContext";
 import { useEffect } from "react";
 import ProductView from "./components/ProductView";
 import ContextReducer from "./components/HooksConcepts/ContextReducer";
+import TodoApp from "./components/Todo";
+import ThunkPosts from "./components/ThunkPosts";
+import { Counter } from "./components/Counter/Counter";
+import MoviesApp from "./components/MoviesApp";
 
 function App() {
   // const { isLoggedIn } = useAuth() as any;
@@ -31,12 +35,16 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<DemoScreen />} />
             <Route path="hook" element={<HookScreen />} />
-            <Route path="cart" element={<CartScreen />} />
-            {/* <Route path="products" element={<ProductList />} /> */}
-            
+            <Route path="cart" element={<CartScreen />} />            
             <Route path="products" element={<ContextReducer />} />
             <Route path="productDetails/:id" element={<ProductView />} />
             <Route path="login" element={<Login />} />
+
+            <Route path="todo" element={<TodoApp />} />
+            <Route path="posts" element={<ThunkPosts />} />
+            <Route path="counter" element={<Counter />} />
+            <Route path="movies" element={<MoviesApp />} />
+
           </Route>
           {/* )} */}
         </Routes>

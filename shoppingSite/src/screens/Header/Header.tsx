@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
+import DropdownMenu from "@/components/UIComponents/DropdownMenu";
 
 type HeaderProps = {
   cartCount?: number;
 };
 
 const Header: React.FC<HeaderProps> = ({ cartCount = 0 }) => {
+
+  const appsMenuList = [
+  { name: "Todo App", link: "/todo" },
+  { name: "Posts App", link: "/posts" },
+  { name: "Counter App", link: "/counter" },
+  { name: "Movies App", link: "/movies" },
+  ]
   return (
     <header className="ecom-header">
       <div className="ecom-header__inner">
@@ -33,9 +41,11 @@ const Header: React.FC<HeaderProps> = ({ cartCount = 0 }) => {
           <a className="ecom-header__link" href="/products">
             Products
           </a>
-          <a className="ecom-header__link" href="/orders">
-            Orders
-          </a>
+          
+          {/* Apps Dropdown Menu */}
+          <DropdownMenu menuTitle="Apps" menusList={appsMenuList} />
+          
+          
           <a className="ecom-header__link" href="/login">
             Sign in
           </a>

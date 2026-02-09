@@ -3,6 +3,7 @@ import CustomToggle from "../components/CustomToggle";
 import PaginatedList from "../components/PaginatedList";
 import MultipleUrls from "../components/HooksConcepts/MultipleUrls";
 import { NavLink } from "react-router-dom";
+import { Counter } from "../components/Counter/Counter";
 
 const DemoScreen = () => {
   const [on, setOn] = useState(false);
@@ -49,6 +50,9 @@ const DemoScreen = () => {
 
       {/* paginated list */}
       <PaginatedList items={items} />
+
+      {/* counter with redux */}
+      <Counter/>
     </div>
   );
 };

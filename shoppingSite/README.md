@@ -1,4 +1,5 @@
 # react + vite+ typescript application
+
 # hooks
 - add pagination to the prod list
 - filter and sort
@@ -17,3 +18,15 @@
 - Grid controls placement in both directions, whereas Flexbox excels at spacing and aligning items based on their content. 
 - add up and down filter
 - add sort (alphabetically)
+
+# redux dev tools extension
+- download this on your google browser
+
+# async operation using thunk
+- thunk code will be written using createAsyncThunk().
+- And we will use above object in the createSlice() Reducers
+- thunk will return promise
+- promise has 3 diff states
+- we use this whenever we have type in the output like promise states to handle separately
+- Also we extraReducers in the redux-slice
+- 

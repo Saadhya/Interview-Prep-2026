@@ -7,6 +7,8 @@ import { reducers } from "./reducers";
 export const store = configureStore({
   reducer: reducers,
 });
+// console.log(store.getState());
+
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
