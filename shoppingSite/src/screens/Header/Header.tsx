@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./Header.css";
 import DropdownMenu from "@/components/UIComponents/DropdownMenu";
+import { useDispatch } from "react-redux";
+import { useAppDispatch } from "@/store";
+import SearchForm from "./SearchForm";
 
 type HeaderProps = {
   cartCount?: number;
@@ -9,11 +12,13 @@ type HeaderProps = {
 const Header: React.FC<HeaderProps> = ({ cartCount = 0 }) => {
 
   const appsMenuList = [
-  { name: "Todo App", link: "/todo" },
-  { name: "Posts App", link: "/posts" },
-  { name: "Counter App", link: "/counter" },
-  { name: "Movies App", link: "/movies" },
+    { name: "Todo App", link: "/todo" },
+    { name: "Posts App", link: "/posts" },
+    { name: "Counter App", link: "/counter" },
+    { name: "Movies App", link: "/movies" },
   ]
+  
+
   return (
     <header className="ecom-header">
       <div className="ecom-header__inner">
@@ -21,21 +26,7 @@ const Header: React.FC<HeaderProps> = ({ cartCount = 0 }) => {
           ShopMate
         </a>
 
-        <form
-          className="ecom-header__search"
-          role="search"
-          onSubmit={(e) => e.preventDefault()}
-        >
-          <input
-            className="ecom-header__searchInput"
-            type="search"
-            placeholder="Search products, brands and more"
-            aria-label="Search products"
-          />
-          <button className="ecom-header__searchButton" type="submit">
-            Search
-          </button>
-        </form>
+      <SearchForm/>
 
         <nav className="ecom-header__nav" aria-label="Primary">
           <a className="ecom-header__link" href="/products">

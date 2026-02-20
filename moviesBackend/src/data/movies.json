@@ -1,0 +1,72 @@
+[
+  {
+    "title": "The Lion King",
+    "description": "A young lion prince flees his kingdom after the murder of his father, only to learn the true meaning of responsibility and bravery.",
+    "writer": "Jeff Nathanson",
+    "director": "Jon Favreau",
+    "release_date": "2019-07-19",
+    "runtime": "118 min",
+    "poster_url": "https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_SX300.jpg",
+    "genres": ["Adventure", "Drama", "Family", "Musical"]
+  },
+  {
+    "title": "Mowgli: Legend of the Jungle",
+    "description": "A man-cub named Mowgli flees the jungle with the help of his panther and bear friends after a tiger threatens him.",
+    "writer": "Justin Marks",
+    "director": "Andy Serkis",
+    "release_date": "2018-12-07",
+    "runtime": "104 min",
+    "poster_url": "https://m.media-amazon.com/images/M/MV5BMjMzODc2NzU5MV5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg",
+    "genres": ["Adventure", "Drama", "Fantasy"]
+  },
+  {
+    "title": "Doctor Strange",
+    "description": "A former neurosurgeon becomes the Sorcerer Supreme after a career-ending injury.",
+    "writer": "Jon Spaihts, Scott Derrickson, C. Robert Cargill",
+    "director": "Scott Derrickson",
+    "release_date": "2016-10-25",
+    "runtime": "115 min",
+    "poster_url": "https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SX300.jpg",
+    "genres": ["Action", "Adventure", "Fantasy", "Sci-Fi"]
+  },
+  {
+    "title": "John Wick",
+    "description": "An ex-hitman comes out of retirement to track down the gangsters that killed his dog.",
+    "writer": "Derek Kolstad",
+    "director": "Chad Stahelski",
+    "release_date": "2014-10-24",
+    "runtime": "101 min",
+    "poster_url": "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg",
+    "genres": ["Action", "Crime", "Thriller"]
+  },
+  {
+    "title": "The Notebook",
+    "description": "A poor yet passionate young man falls in love with a rich young woman.",
+    "writer": "Jeremy Leven",
+    "director": "Nick Cassavetes",
+    "release_date": "2004-02-13",
+    "runtime": "123 min",
+    "poster_url": "https://m.media-amazon.com/images/M/MV5BMTY4NjMzNjE5MV5BMl5BanBnXkFtZTgwNzQ1MjI0NjM@._V1_SX300.jpg",
+    "genres": ["Drama", "Romance"]
+  },
+  {
+    "title": "Inception",
+    "description": "A thief who steals corporate secrets through dream-sharing technology.",
+    "writer": "Christopher Nolan",
+    "director": "Christopher Nolan",
+    "release_date": "2010-07-16",
+    "runtime": "148 min",
+    "poster_url": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTgwNTM3OTM4MjE@._V1_SX300.jpg",
+    "genres": ["Action", "Sci-Fi", "Thriller"]
+  },
+  {
+    "title": "The Dark Knight",
+    "description": "Batman faces the Joker, a criminal mastermind who wants to plunge Gotham into anarchy.",
+    "writer": "Jonathan Nolan, Christopher Nolan",
+    "director": "Christopher Nolan",
+    "release_date": "2008-07-18",
+    "runtime": "152 min",
+    "poster_url": "https://m.media-amazon.com/images/M/MV5BMTM3NTg1MDM5MF5BMl5BanBnXkFtZTgwODc1NTIyNjM@._V1_SX300.jpg",
+    "genres": ["Action", "Crime", "Drama", "Thriller"]
+  }
+]

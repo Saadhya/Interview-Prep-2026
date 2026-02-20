@@ -1,0 +1,21 @@
+[
+  { "id": 1, "name": "action", "label": "Action" },
+  { "id": 2, "name": "adventure", "label": "Adventure" },
+  { "id": 3, "name": "animation", "label": "Animation" },
+  { "id": 4, "name": "comedy", "label": "Comedy" },
+  { "id": 5, "name": "crime", "label": "Crime" },
+  { "id": 6, "name": "documentary", "label": "Documentary" },
+  { "id": 7, "name": "drama", "label": "Drama" },
+  { "id": 8, "name": "family", "label": "Family" },
+  { "id": 9, "name": "fantasy", "label": "Fantasy" },
+  { "id": 10, "name": "history", "label": "History" },
+  { "id": 11, "name": "horror", "label": "Horror" },
+  { "id": 12, "name": "music", "label": "Music" },
+  { "id": 13, "name": "mystery", "label": "Mystery" },
+  { "id": 14, "name": "romance", "label": "Romance" },
+  { "id": 15, "name": "science-fiction", "label": "Science Fiction" },
+  { "id": 16, "name": "tv-movie", "label": "TV Movie" },
+  { "id": 17, "name": "thriller", "label": "Thriller" },
+  { "id": 18, "name": "war", "label": "War" },
+  { "id": 19, "name": "western", "label": "Western" }
+]

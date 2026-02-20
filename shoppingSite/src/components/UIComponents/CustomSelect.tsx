@@ -1,46 +1,53 @@
 "use client"
 
-import {
-  For,
-  Portal,
-  Select,
-  Stack,
-  createListCollection,
-} from "@chakra-ui/react"
+import { Portal, Select, createListCollection } from "@chakra-ui/react"
+import { useState } from "react"
 
+interface selectProps{
+ options:{name:string, label:string}[],
+ placeholder:string, 
+ name:string,
 
-const CustomSelect = () => {
+}
+const CustomSelect = ({options, placeholder}:selectProps) => {
+  const [selected, setSelected] = useState<string>()
+  // console.log("selected", selected);
+  const handleChange=(e: any)=>{
+  // console.log(e)
+    setSelected(e.value)
+  }
+  const collection = createListCollection({items: options.map(option => ({label: option.label, value: option.name}))})
+  
   return (
-    <Stack gap="5" width="320px">
-      <For each={["outline", "subtle"]}>
-        {(variant) => (
-          <Select.Root key={variant} variant={variant} collection={frameworks}>
-            <Select.HiddenSelect />
-            <Select.Label>Select framework - {variant}</Select.Label>
-            <Select.Control>
-              <Select.Trigger>
-                <Select.ValueText placeholder="Select framework" />
-              </Select.Trigger>
-              <Select.IndicatorGroup>
-                <Select.Indicator />
-              </Select.IndicatorGroup>
-            </Select.Control>
-            <Portal>
-              <Select.Positioner>
-                <Select.Content>
-                  {frameworks.items.map((framework) => (
-                    <Select.Item item={framework} key={framework.value}>
-                      {framework.label}
-                      <Select.ItemIndicator />
-                    </Select.Item>
-                  ))}
-                </Select.Content>
-              </Select.Positioner>
-            </Portal>
-          </Select.Root>
-        )}
-      </For>
-    </Stack>
+    <Select.Root
+      collection={collection}
+      width="320px"
+      value={selected}
+      onValueChange={(e) => handleChange(e)}
+    >
+      <Select.HiddenSelect />
+      <Select.Label>Select {placeholder}</Select.Label>
+      <Select.Control>
+        <Select.Trigger>
+          <Select.ValueText placeholder={`Select ${placeholder}`} />
+        </Select.Trigger>
+        <Select.IndicatorGroup>
+          <Select.Indicator />
+        </Select.IndicatorGroup>
+      </Select.Control>
+      <Portal>
+        <Select.Positioner>
+          <Select.Content>
+            {collection.items.map((item) => (
+              <Select.Item item={item} key={item.value}>
+                {item.label}
+                <Select.ItemIndicator />
+              </Select.Item>
+            ))}
+          </Select.Content>
+        </Select.Positioner>
+      </Portal>
+    </Select.Root>
   )
 }
 
@@ -53,4 +60,4 @@ const frameworks = createListCollection({
   ],
 })
 
-export default CustomSelect
+export default CustomSelect;
