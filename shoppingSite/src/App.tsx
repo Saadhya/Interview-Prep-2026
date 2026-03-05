@@ -3,18 +3,17 @@ import Header from "./screens/Header/Header";
 import Footer from "./screens/Footer/Footer";
 import DemoScreen from "./screens/DemoScreen";
 import HookScreen from "./screens/HookScreen";
-import { Outlet, Route, Routes, useNavigate } from "react-router-dom";
+import { Outlet, Route, Routes } from "react-router-dom";
 import ProductList from "./screens/ProductList";
 import CartScreen from "./screens/CartScreen";
 import Login from "./screens/Auth/Login";
-import { useAuth } from "./context/AuthContext";
-import { useEffect } from "react";
 import ProductView from "./components/ProductView";
 import ContextReducer from "./components/HooksConcepts/ContextReducer";
 import TodoApp from "./components/Todo";
 import ThunkPosts from "./components/ThunkPosts";
 import { Counter } from "./components/Counter/Counter";
 import MoviesApp from "./components/MoviesApp";
+import {  WelcomeClass } from "./components/WelcomeClass";
 
 function App() {
   // const { isLoggedIn } = useAuth() as any;
@@ -44,6 +43,7 @@ function App() {
             <Route path="posts" element={<ThunkPosts />} />
             <Route path="counter" element={<Counter />} />
             <Route path="movies" element={<MoviesApp />} />
+            <Route path="welcome" element={<WelcomeClass />} />
 
           </Route>
           {/* )} */}
